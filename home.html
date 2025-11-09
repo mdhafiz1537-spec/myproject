@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySocial Feed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fas fa-feather-alt"></i> MySocial
+    </div>
+    <ul class="nav-links">
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> Explore</a></li>
+        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+        <li><a href="#"><i class="fas fa-ellipsis-h"></i> More</a></li>
+    </ul>
+</aside>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="feed-container">
+
+        <!-- Create Post Section -->
+        <div class="create-post" id="create-post">
+            <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+            <input type="file" id="post-image" accept="image/*">
+            <button id="post-btn">Post</button>
+        </div>
+
+        <!-- Posts Section -->
+        <div id="posts-feed">
+            <!-- Dynamic posts appear here -->
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
